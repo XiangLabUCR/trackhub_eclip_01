@@ -1,0 +1,119 @@
+#######################
+# PB1 composite track
+#######################
+track PB1
+compositeTrack on
+shortLabel PB1 eCLIP
+longLabel PB1 eCLIP IP and Input, plus/minus strands
+group default
+visibility full
+type bigWig
+autoScale on
+maxHeightPixels 128:32:8
+subGroup1 sample IP=IP IN=Input
+subGroup2 replicate 1=Rep1 2=Rep2
+subGroup3 strand plus=Plus minus=Minus
+sortOrder sample=+ replicate=+ strand=+
+dimensions dimensionX=replicate dimensionY=strand
+dragAndDrop subTracks
+priority 1
+
+    # ---- PB1 IN Rep1 ----
+    track PB1_IN_1_plus
+    parent PB1 on
+    bigDataUrl PB1_IN_1.scaled.plus.bw
+    shortLabel IN_1(+)
+    longLabel PB1 Input replicate 1 plus strand
+    subGroups sample=IN replicate=1 strand=plus
+    color 0,100,255
+
+    track PB1_IN_1_minus
+    parent PB1 on
+    bigDataUrl PB1_IN_1.scaled.minus.bw
+    shortLabel IN_1(-)
+    longLabel PB1 Input replicate 1 minus strand
+    subGroups sample=IN replicate=1 strand=minus
+    color 0,100,255
+
+    # ---- PB1 IN Rep2 ----
+    track PB1_IN_2_plus
+    parent PB1 on
+    bigDataUrl PB1_IN_2.scaled.plus.bw
+    shortLabel IN_2(+)
+    longLabel PB1 Input replicate 2 plus strand
+    subGroups sample=IN replicate=2 strand=plus
+    color 0,100,255
+
+    track PB1_IN_2_minus
+    parent PB1 on
+    bigDataUrl PB1_IN_2.scaled.minus.bw
+    shortLabel IN_2(-)
+    longLabel PB1 Input replicate 2 minus strand
+    subGroups sample=IN replicate=2 strand=minus
+    color 0,100,255
+
+    # ---- PB1 IP Rep1 ----
+    track PB1_IP_1_plus
+    parent PB1 on
+    bigDataUrl PB1_IP_1.scaled.plus.bw
+    shortLabel IP_1(+)
+    longLabel PB1 IP replicate 1 plus strand
+    subGroups sample=IP replicate=1 strand=plus
+    color 255,0,0
+
+    track PB1_IP_1_minus
+    parent PB1 on
+    bigDataUrl PB1_IP_1.scaled.minus.bw
+    shortLabel IP_1(-)
+    longLabel PB1 IP replicate 1 minus strand
+    subGroups sample=IP replicate=1 strand=minus
+    color 255,0,0
+
+    # ---- PB1 IP Rep2 ----
+    track PB1_IP_2_plus
+    parent PB1 on
+    bigDataUrl PB1_IP_2.scaled.plus.bw
+    shortLabel IP_2(+)
+    longLabel PB1 IP replicate 2 plus strand
+    subGroups sample=IP replicate=2 strand=plus
+    color 255,0,0
+
+    track PB1_IP_2_minus
+    parent PB1 on
+    bigDataUrl PB1_IP_2.scaled.minus.bw
+    shortLabel IP_2(-)
+    longLabel PB1 IP replicate 2 minus strand
+    subGroups sample=IP replicate=2 strand=minus
+    color 255,0,0
+
+
+#######################
+# PB2 composite track
+#######################
+track PB2
+compositeTrack on
+shortLabel PB2 eCLIP
+longLabel PB2 eCLIP IP and Input, plus/minus strands
+group default
+visibility full
+type bigWig
+autoScale on
+maxHeightPixels 128:32:8
+subGroup1 sample IP=IP IN=Input
+subGroup2 replicate 1=Rep1 2=Rep2
+subGroup3 strand plus=Plus minus=Minus
+sortOrder sample=+ replicate=+ strand=+
+dimensions dimensionX=replicate dimensionY=strand
+dragAndDrop subTracks
+priority 2
+
+    # Add PB2 IN/IP replicates similarly (mirroring PB1)
+    track PB2_IN_1_plus
+    parent PB2 on
+    bigDataUrl PB2_IN_1.scaled.plus.bw
+    shortLabel IN_1(+)
+    longLabel PB2 Input replicate 1 plus strand
+    subGroups sample=IN replicate=1 strand=plus
+    color 0,100,255
+
+    ...
