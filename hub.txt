@@ -1,0 +1,5 @@
+hub JoyTrackHub
+shortLabel eCLIP PB1 PB2
+longLabel eCLIP-seq IP vs Input tracks (PB1 and PB2)
+genomesFile genomes.txt
+email joy.xiang@medsch.ucr.edu
