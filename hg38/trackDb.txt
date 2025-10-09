@@ -107,7 +107,7 @@ dimensions dimensionX=replicate dimensionY=strand
 dragAndDrop subTracks
 priority 2
 
-    # Add PB2 IN/IP replicates similarly (mirroring PB1)
+    # ---- PB2 IN Rep1 ----
     track PB2_IN_1_plus
     parent PB2 on
     bigDataUrl PB2_IN_1.scaled.plus.bw
@@ -116,4 +116,61 @@ priority 2
     subGroups sample=IN replicate=1 strand=plus
     color 0,100,255
 
-    ...
+    track PB2_IN_1_minus
+    parent PB2 on
+    bigDataUrl PB2_IN_1.scaled.minus.bw
+    shortLabel IN_1(-)
+    longLabel PB2 Input replicate 1 minus strand
+    subGroups sample=IN replicate=1 strand=minus
+    color 0,100,255
+
+    # ---- PB2 IN Rep2 ----
+    track PB2_IN_2_plus
+    parent PB2 on
+    bigDataUrl PB2_IN_2.scaled.plus.bw
+    shortLabel IN_2(+)
+    longLabel PB2 Input replicate 2 plus strand
+    subGroups sample=IN replicate=2 strand=plus
+    color 0,100,255
+
+    track PB2_IN_2_minus
+    parent PB2 on
+    bigDataUrl PB2_IN_2.scaled.minus.bw
+    shortLabel IN_2(-)
+    longLabel PB2 Input replicate 2 minus strand
+    subGroups sample=IN replicate=2 strand=minus
+    color 0,100,255
+
+    # ---- PB2 IP Rep1 ----
+    track PB2_IP_1_plus
+    parent PB2 on
+    bigDataUrl PB2_IP_1.scaled.plus.bw
+    shortLabel IP_1(+)
+    longLabel PB2 IP replicate 1 plus strand
+    subGroups sample=IP replicate=1 strand=plus
+    color 255,0,0
+
+    track PB2_IP_1_minus
+    parent PB2 on
+    bigDataUrl PB2_IP_1.scaled.minus.bw
+    shortLabel IP_1(-)
+    longLabel PB2 IP replicate 1 minus strand
+    subGroups sample=IP replicate=1 strand=minus
+    color 255,0,0
+
+    # ---- PB2 IP Rep2 ----
+    track PB2_IP_2_plus
+    parent PB2 on
+    bigDataUrl PB2_IP_2.scaled.plus.bw
+    shortLabel IP_2(+)
+    longLabel PB2 IP replicate 2 plus strand
+    subGroups sample=IP replicate=2 strand=plus
+    color 255,0,0
+
+    track PB2_IP_2_minus
+    parent PB2 on
+    bigDataUrl PB2_IP_2.scaled.minus.bw
+    shortLabel IP_2(-)
+    longLabel PB2 IP replicate 2 minus strand
+    subGroups sample=IP replicate=2 strand=minus
+    color 255,0,0
