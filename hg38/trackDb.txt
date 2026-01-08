@@ -64,7 +64,8 @@ longLabel PB2 eCLIP IP and Input
 group default
 visibility full
 type bigWig
-autoScale on
+autoScale off
+viewLimits -5:5
 maxHeightPixels 128:32:8
 subGroup1 sample IP=IP IN=Input
 subGroup2 replicate 1=Rep1 2=Rep2
@@ -104,7 +105,6 @@ priority 1
         longLabel PB2 IP1 plus strand
         bigDataUrl PB2_IP_1.scaled.plus.bw
         color 0,102,204
-        autoScale on
 
         track PB2_IP_1_minus
         parent PB2_IP_1
@@ -112,7 +112,6 @@ priority 1
         longLabel PB2 IP1 minus strand
         bigDataUrl PB2_IP_1.scaled.minus.bw
         color 204,0,0
-        autoScale on
         negateValues on
 
     # ---- PB2 IP Rep2 ----
@@ -128,7 +127,6 @@ priority 1
         longLabel PB2 IP2 plus strand
         bigDataUrl PB2_IP_2.scaled.plus.bw
         color 0,102,204
-        autoScale on
 
         track PB2_IP_2_minus
         parent PB2_IP_2
@@ -136,5 +134,4 @@ priority 1
         longLabel PB2 IP2 minus strand
         bigDataUrl PB2_IP_2.scaled.minus.bw
         color 204,0,0
-        autoScale on
         negateValues on
