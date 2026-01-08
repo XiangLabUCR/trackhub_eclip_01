@@ -1,30 +1,97 @@
-##################################
-# Super track
-##################################
-
-track Flu_eCLIP
-superTrack on show
-shortLabel Flu eCLIP
-longLabel Influenza eCLIP strand-specific signal (scaled)
-
-##################################
-# PB2
-##################################
-
-track PB2
-parent Flu_eCLIP
+#######################
+# PB1 composite track
+#######################
+track PB1
 compositeTrack on
-shortLabel PB2
-longLabel PB2 eCLIP (scaled, strand-specific)
-type bigWig
+shortLabel PB1 eCLIP
+longLabel PB1 eCLIP IP and Input
+group default
 visibility full
+type bigWig
 autoScale on
-maxHeightPixels 100:60:20
+maxHeightPixels 128:32:8
+subGroup1 sample IP=IP IN=Input
+subGroup2 replicate 1=Rep1 2=Rep2
+sortOrder sample=+ replicate=+
+dimensions dimensionX=replicate
+dragAndDrop subTracks
+priority 1
 
-##################################
-# PB2 IP Rep 1
-##################################
+    # ---- PB1 IN Rep1 ----
+    track PB1_IN_1
+    parent PB1 on
+    bigDataUrl PB1_IN_1.bw
+    shortLabel IN_1
+    longLabel PB1 Input replicate 1
+    subGroups sample=IN replicate=1
+    color 0,100,255
 
+    # ---- PB1 IN Rep2 ----
+    track PB1_IN_2
+    parent PB1 on
+    bigDataUrl PB1_IN_2.bw
+    shortLabel IN_2
+    longLabel PB1 Input replicate 2
+    subGroups sample=IN replicate=2
+    color 0,100,255
+
+    # ---- PB1 IP Rep1 ----
+    track PB1_IP_1
+    parent PB1 on
+    bigDataUrl PB1_IP_1.bw
+    shortLabel IP_1
+    longLabel PB1 IP replicate 1
+    subGroups sample=IP replicate=1
+    color 255,0,0
+
+    # ---- PB1 IP Rep2 ----
+    track PB1_IP_2
+    parent PB1 on
+    bigDataUrl PB1_IP_2.bw
+    shortLabel IP_2
+    longLabel PB1 IP replicate 2
+    subGroups sample=IP replicate=2
+    color 255,0,0
+
+
+#######################
+# PB2 composite track
+#######################
+track PB2
+compositeTrack on
+shortLabel PB2 eCLIP
+longLabel PB2 eCLIP IP and Input
+group default
+visibility full
+type bigWig
+autoScale on
+maxHeightPixels 128:32:8
+subGroup1 sample IP=IP IN=Input
+subGroup2 replicate 1=Rep1 2=Rep2
+sortOrder sample=+ replicate=+
+dimensions dimensionX=replicate
+dragAndDrop subTracks
+priority 1
+
+    # ---- PB2 IN Rep1 ----
+    track PB2_IN_1
+    parent PB2 on
+    bigDataUrl PB2_IN_1.bw
+    shortLabel IN_1
+    longLabel PB2 Input replicate 1
+    subGroups sample=IN replicate=1
+    color 0,100,255
+
+    # ---- PB2 IN Rep2 ----
+    track PB2_IN_2
+    parent PB2 on
+    bigDataUrl PB2_IN_2.bw
+    shortLabel IN_2
+    longLabel PB2 Input replicate 2
+    subGroups sample=IN replicate=2
+    color 0,100,255
+
+    # ---- PB2 IP Rep1 ----
     track PB2_IP_1
     parent PB2
     shortLabel IP1
@@ -48,10 +115,7 @@ maxHeightPixels 100:60:20
         autoScale on
         negateValues on
 
-##################################
-# PB2 IP Rep 2
-##################################
-
+    # ---- PB2 IP Rep2 ----
     track PB2_IP_2
     parent PB2
     shortLabel IP2
@@ -72,181 +136,5 @@ maxHeightPixels 100:60:20
         longLabel PB2 IP2 minus strand
         bigDataUrl PB2_IP_2.scaled.minus.bw
         color 204,0,0
-        autoScale on
-        negateValues on
-
-##################################
-# PB2 Input Rep 1
-##################################
-
-    track PB2_IN_1
-    parent PB2
-    shortLabel IN1
-    longLabel PB2 input replicate 1
-    type bigWig
-
-        track PB2_IN_1_plus
-        parent PB2_IN_1
-        shortLabel +
-        longLabel PB2 IN1 plus strand
-        bigDataUrl PB2_IN_1.scaled.plus.bw
-        color 120,120,120
-        autoScale on
-
-        track PB2_IN_1_minus
-        parent PB2_IN_1
-        shortLabel -
-        longLabel PB2 IN1 minus strand
-        bigDataUrl PB2_IN_1.scaled.minus.bw
-        color 160,160,160
-        autoScale on
-        negateValues on
-
-##################################
-# PB2 Input Rep 2
-##################################
-
-    track PB2_IN_2
-    parent PB2
-    shortLabel IN2
-    longLabel PB2 input replicate 2
-    type bigWig
-
-        track PB2_IN_2_plus
-        parent PB2_IN_2
-        shortLabel +
-        longLabel PB2 IN2 plus strand
-        bigDataUrl PB2_IN_2.scaled.plus.bw
-        color 120,120,120
-        autoScale on
-
-        track PB2_IN_2_minus
-        parent PB2_IN_2
-        shortLabel -
-        longLabel PB2 IN2 minus strand
-        bigDataUrl PB2_IN_2.scaled.minus.bw
-        color 160,160,160
-        autoScale on
-        negateValues on
-
-##################################
-# PB1
-##################################
-
-track PB1
-parent Flu_eCLIP
-compositeTrack on
-shortLabel PB1
-longLabel PB1 eCLIP (scaled, strand-specific)
-type bigWig
-visibility full
-autoScale on
-maxHeightPixels 100:60:20
-
-##################################
-# PB1 IP Rep 1
-##################################
-
-    track PB1_IP_1
-    parent PB1
-    shortLabel IP1
-    longLabel PB1 IP replicate 1
-    type bigWig
-
-        track PB1_IP_1_plus
-        parent PB1_IP_1
-        shortLabel +
-        longLabel PB1 IP1 plus strand
-        bigDataUrl PB1_IP_1.scaled.plus.bw
-        color 0,102,204
-        autoScale on
-
-        track PB1_IP_1_minus
-        parent PB1_IP_1
-        shortLabel -
-        longLabel PB1 IP1 minus strand
-        bigDataUrl PB1_IP_1.scaled.minus.bw
-        color 204,0,0
-        autoScale on
-        negateValues on
-
-##################################
-# PB1 IP Rep 2
-##################################
-
-    track PB1_IP_2
-    parent PB1
-    shortLabel IP2
-    longLabel PB1 IP replicate 2
-    type bigWig
-
-        track PB1_IP_2_plus
-        parent PB1_IP_2
-        shortLabel +
-        longLabel PB1 IP2 plus strand
-        bigDataUrl PB1_IP_2.scaled.plus.bw
-        color 0,102,204
-        autoScale on
-
-        track PB1_IP_2_minus
-        parent PB1_IP_2
-        shortLabel -
-        longLabel PB1 IP2 minus strand
-        bigDataUrl PB1_IP_2.scaled.minus.bw
-        color 204,0,0
-        autoScale on
-        negateValues on
-
-##################################
-# PB1 Input Rep 1
-##################################
-
-    track PB1_IN_1
-    parent PB1
-    shortLabel IN1
-    longLabel PB1 input replicate 1
-    type bigWig
-
-        track PB1_IN_1_plus
-        parent PB1_IN_1
-        shortLabel +
-        longLabel PB1 IN1 plus strand
-        bigDataUrl PB1_IN_1.scaled.plus.bw
-        color 120,120,120
-        autoScale on
-
-        track PB1_IN_1_minus
-        parent PB1_IN_1
-        shortLabel -
-        longLabel PB1 IN1 minus strand
-        bigDataUrl PB1_IN_1.scaled.minus.bw
-        color 160,160,160
-        autoScale on
-        negateValues on
-
-##################################
-# PB1 Input Rep 2
-##################################
-
-    track PB1_IN_2
-    parent PB1
-    shortLabel IN2
-    longLabel PB1 input replicate 2
-    type bigWig
-
-        track PB1_IN_2_plus
-        parent PB1_IN_2
-        shortLabel +
-        longLabel PB1 IN2 plus strand
-        bigDataUrl PB1_IN_2.scaled.plus.bw
-        color 120,120,120
-        autoScale on
-
-        track PB1_IN_2_minus
-        parent PB1_IN_2
-        shortLabel -
-        longLabel PB1 IN2 minus strand
-        bigDataUrl PB1_IN_2.scaled.minus.bw
-        color 160,160,160
         autoScale on
         negateValues on
