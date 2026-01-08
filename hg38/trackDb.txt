@@ -134,7 +134,7 @@ priority 1
     longLabel PB2 Input replicate 1 minus
     subGroups sample=IN replicate=1
     color 0,100,255
-    negateValues
+    negateValues on
     autoScale on
 
     # ---- PB2 IN Rep2 ----
