@@ -8,7 +8,7 @@ longLabel PB1 eCLIP IP and Input
 group default
 visibility full
 type bigWig
-autoScale on
+autoScale off
 maxHeightPixels 128:32:8
 subGroup1 sample IP=IP IN=Input
 subGroup2 replicate 1=Rep1 2=Rep2
@@ -21,7 +21,7 @@ priority 1
     track PB1_IN_1+
     parent PB1 on
     bigDataUrl PB1_IN_1.plus.bw
-    shortLabel IN_1+
+    shortLabel PB1_IN_1+
     longLabel PB1 Input replicate 1 plus
     subGroups sample=IN replicate=1
     color 0,100,255
@@ -29,7 +29,7 @@ priority 1
     track PB1_IN_1-
     parent PB1 on
     bigDataUrl PB1_IN_1.minus.bw
-    shortLabel IN_1-
+    shortLabel PB1_IN_1-
     longLabel PB1 Input replicate 1 minus
     subGroups sample=IN replicate=1
     color 0,100,255
@@ -96,7 +96,7 @@ longLabel PB2 eCLIP IP and Input
 group default
 visibility full
 type bigWig
-autoScale on
+autoScale off
 maxHeightPixels 128:32:8
 subGroup1 sample IP=IP IN=Input
 subGroup2 replicate 1=Rep1 2=Rep2
@@ -106,37 +106,69 @@ dragAndDrop subTracks
 priority 1
 
     # ---- PB2 IN Rep1 ----
-    track PB2_IN_1
+    track PB2_IN_1+
     parent PB2 on
-    bigDataUrl PB2_IN_1.bw
-    shortLabel IN_1
-    longLabel PB2 Input replicate 1
+    bigDataUrl PB2_IN_1.plus.bw
+    shortLabel PB2_IN_1+
+    longLabel PB2 Input replicate 1 plus
+    subGroups sample=IN replicate=1
+    color 0,100,255
+
+    track PB2_IN_1-
+    parent PB2 on
+    bigDataUrl PB2_IN_1.minus.bw
+    shortLabel PB2_IN_1-
+    longLabel PB2 Input replicate 1 minus
     subGroups sample=IN replicate=1
     color 0,100,255
 
     # ---- PB2 IN Rep2 ----
-    track PB2_IN_2
+    track PB2_IN_2+
     parent PB2 on
-    bigDataUrl PB2_IN_2.bw
-    shortLabel IN_2
-    longLabel PB2 Input replicate 2
+    bigDataUrl PB2_IN_2.plus.bw
+    shortLabel PB2_IN_2+
+    longLabel PB2 Input replicate 2 plus
+    subGroups sample=IN replicate=2
+    color 0,100,255
+
+    track PB2_IN_2-
+    parent PB2 on
+    bigDataUrl PB2_IN_2.minus.bw
+    shortLabel PB2_IN_2-
+    longLabel PB2 Input replicate 2 minus
     subGroups sample=IN replicate=2
     color 0,100,255
 
     # ---- PB2 IP Rep1 ----
-    track PB2_IP_1
+    track PB2_IP_1+
     parent PB2 on
-    bigDataUrl PB2_IP_1.bw
-    shortLabel IP_1
-    longLabel PB2 IP replicate 1
+    bigDataUrl PB2_IP_1.plus.bw
+    shortLabel PB2_IP_1+
+    longLabel PB2 IP replicate 1 plus
+    subGroups sample=IP replicate=1
+    color 255,0,0
+
+    track PB2_IP_1-
+    parent PB2 on
+    bigDataUrl PB2_IP_1.minus.bw
+    shortLabel PB2_IP_1-
+    longLabel PB2 IP replicate 1 minus
     subGroups sample=IP replicate=1
     color 255,0,0
 
     # ---- PB2 IP Rep2 ----
-    track PB2_IP_2
+    track PB2_IP_2+
     parent PB2 on
-    bigDataUrl PB2_IP_2.bw
-    shortLabel IP_2
-    longLabel PB2 IP replicate 2
+    bigDataUrl PB2_IP_2.plus.bw
+    shortLabel PB2_IP_2+
+    longLabel PB2 IP replicate 2 plus
+    subGroups sample=IP replicate=2
+    color 255,0,0
+
+    track PB2_IP_2-
+    parent PB2 on
+    bigDataUrl PB2_IP_2.minus.bw
+    shortLabel PB2_IP_2-
+    longLabel PB2 IP replicate 2 minus
     subGroups sample=IP replicate=2
     color 255,0,0
