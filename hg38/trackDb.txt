@@ -30,12 +30,12 @@ priority 1
 
     track PB1_IN_1-
     parent PB1 on
-    bigDataUrl PB1_IN_1.minus.bw
+    bigDataUrl PB1_IN_1.scaled.minus.bw
     shortLabel PB1_IN_1-
     longLabel PB1 Input replicate 1 minus
     subGroups sample=IN replicate=1
     color 0,100,255
-    viewLimits -50000:0
+    negateValues on
     autoScale off
 
 
