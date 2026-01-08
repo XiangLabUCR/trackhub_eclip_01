@@ -25,6 +25,7 @@ priority 1
     longLabel PB1 Input replicate 1
     subGroups sample=IN replicate=1
     color 0,100,255
+    negateValues on
 
     # ---- PB1 IN Rep2 ----
     track PB1_IN_2
