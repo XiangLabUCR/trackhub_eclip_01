@@ -26,7 +26,7 @@ priority 1
     subGroups sample=IN replicate=1
     color 0,100,255
     viewLimits 0:50000
-    autoScale off
+    autoScale on
 
     track PB1_IN_1-
     parent PB1 on
@@ -36,7 +36,7 @@ priority 1
     subGroups sample=IN replicate=1
     color 0,100,255
     negateValues on
-    autoScale off
+    autoScale on
 
 
     # ---- PB1 IN Rep2 ----
