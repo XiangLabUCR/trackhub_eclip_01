@@ -33,6 +33,8 @@ priority 1
     longLabel PB1 Input replicate 1 minus
     subGroups sample=IN replicate=1
     color 0,100,255
+    viewLimits -50000:0
+    autoScale off
 
 
     # ---- PB1 IN Rep2 ----
@@ -51,6 +53,8 @@ priority 1
     longLabel PB1 Input replicate 2 minus
     subGroups sample=IN replicate=2
     color 0,100,255
+    viewLimits -50000:0
+    autoScale off
 
     # ---- PB1 IP Rep1 ----
     track PB1_IP_1+
@@ -68,6 +72,8 @@ priority 1
     longLabel PB1 IP replicate 1 minus
     subGroups sample=IP replicate=1
     color 255,0,0
+    viewLimits -50000:0
+    autoScale off
 
     # ---- PB1 IP Rep2 ----
     track PB1_IP_2+
@@ -85,6 +91,8 @@ priority 1
     longLabel PB1 IP replicate 2 minus
     subGroups sample=IP replicate=2
     color 255,0,0
+    viewLimits -50000:0
+    autoScale off
 
 #######################
 # PB2 composite track
@@ -121,6 +129,8 @@ priority 1
     longLabel PB2 Input replicate 1 minus
     subGroups sample=IN replicate=1
     color 0,100,255
+    viewLimits -50000:0
+    autoScale off
 
     # ---- PB2 IN Rep2 ----
     track PB2_IN_2+
@@ -138,6 +148,8 @@ priority 1
     longLabel PB2 Input replicate 2 minus
     subGroups sample=IN replicate=2
     color 0,100,255
+    viewLimits -50000:0
+    autoScale off
 
     # ---- PB2 IP Rep1 ----
     track PB2_IP_1+
@@ -155,6 +167,8 @@ priority 1
     longLabel PB2 IP replicate 1 minus
     subGroups sample=IP replicate=1
     color 255,0,0
+    viewLimits -50000:0
+    autoScale off
 
     # ---- PB2 IP Rep2 ----
     track PB2_IP_2+
@@ -172,3 +186,5 @@ priority 1
     longLabel PB2 IP replicate 2 minus
     subGroups sample=IP replicate=2
     color 255,0,0
+    viewLimits -50000:0
+    autoScale off
