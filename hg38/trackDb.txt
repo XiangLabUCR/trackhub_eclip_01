@@ -69,3 +69,75 @@ longLabel PB1 IP replicate 1 minus strand
 subGroups sample=IP replicate=1 strand=minus
 color 204,0,0
 negateValues on
+
+#######################
+# PB2 composite track
+#######################
+track PB2
+compositeTrack on
+shortLabel PB2 eCLIP
+longLabel PB2 eCLIP IP and Input (strand-specific)
+group default
+visibility full
+type bigWig
+autoScale off
+viewLimits -5:5
+maxHeightPixels 128:32:8
+
+subGroup1 sample IP=IP IN=Input
+subGroup2 replicate 1=Rep1 2=Rep2
+subGroup3 strand plus=Plus minus=Minus
+
+dimensions dimensionX=replicate dimensionY=sample
+sortOrder sample=+ replicate=+ strand=+
+dragAndDrop subTracks
+priority 1
+
+#######################
+# View
+#######################
+track PB2_signal
+parent PB2
+view Signal
+shortLabel Signal
+longLabel PB2 strand-specific signal
+
+#######################
+# PB2 IN Rep1
+#######################
+track PB2_IN_1_plus
+parent PB2_signal
+bigDataUrl PB2_IN_1.scaled.plus.bw
+shortLabel IN1 +
+longLabel PB2 Input replicate 1 plus strand
+subGroups sample=IN replicate=1 strand=plus
+color 0,100,255
+
+track PB2_IN_1_minus
+parent PB2_signal
+bigDataUrl PB2_IN_1.scaled.minus.bw
+shortLabel IN1 -
+longLabel PB2 Input replicate 1 minus strand
+subGroups sample=IN replicate=1 strand=minus
+color 0,100,255
+negateValues on
+
+#######################
+# PB2 IP Rep1
+#######################
+track PB2_IP_1_plus
+parent PB2_signal
+bigDataUrl PB2_IP_1.scaled.plus.bw
+shortLabel IP1 +
+longLabel PB2 IP replicate 1 plus strand
+subGroups sample=IP replicate=1 strand=plus
+color 204,0,0
+
+track PB2_IP_1_minus
+parent PB2_signal
+bigDataUrl PB2_IP_1.scaled.minus.bw
+shortLabel IP1 -
+longLabel PB2 IP replicate 1 minus strand
+subGroups sample=IP replicate=1 strand=minus
+color 204,0,0
+negateValues on
