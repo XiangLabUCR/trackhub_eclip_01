@@ -90,6 +90,7 @@ priority 1
 #######################
 track PB2
 compositeTrack on
+view Signal
 shortLabel PB2 eCLIP
 longLabel PB2 eCLIP IP and Input
 group default
