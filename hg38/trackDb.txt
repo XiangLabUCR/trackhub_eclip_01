@@ -35,6 +35,7 @@ priority 1
     longLabel PB1 Input replicate 2
     subGroups sample=IN replicate=2
     color 0,100,255
+    negateValues on
 
     # ---- PB1 IP Rep1 ----
     track PB1_IP_1
@@ -44,6 +45,7 @@ priority 1
     longLabel PB1 IP replicate 1
     subGroups sample=IP replicate=1
     color 255,0,0
+    negateValues on
 
     # ---- PB1 IP Rep2 ----
     track PB1_IP_2
@@ -53,7 +55,7 @@ priority 1
     longLabel PB1 IP replicate 2
     subGroups sample=IP replicate=2
     color 255,0,0
-
+    negateValues on
 
 #######################
 # PB2 composite track
