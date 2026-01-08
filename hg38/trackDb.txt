@@ -20,6 +20,7 @@ priority 1
     # ---- PB1 IN Rep1 ----
     track PB1_IN_1
     parent PB1 on
+    view Signal
     bigDataUrl PB1_IN_1.bw
     shortLabel IN_1
     longLabel PB1 Input replicate 1
@@ -30,6 +31,7 @@ priority 1
     # ---- PB1 IN Rep2 ----
     track PB1_IN_2
     parent PB1 on
+    view Signal
     bigDataUrl PB1_IN_2.bw
     shortLabel IN_2
     longLabel PB1 Input replicate 2
@@ -39,6 +41,7 @@ priority 1
     # ---- PB1 IP Rep1 ----
     track PB1_IP_1
     parent PB1
+    view Signal
     shortLabel IP1
     longLabel PB1 IP replicate 1
     type bigWig
@@ -61,6 +64,7 @@ priority 1
     # ---- PB1 IP Rep2 ----
     track PB1_IP_2
     parent PB1
+    view Signal
     shortLabel IP2
     longLabel PB1 IP replicate 2
     type bigWig
@@ -104,6 +108,7 @@ priority 1
     # ---- PB2 IN Rep1 ----
     track PB2_IN_1
     parent PB2
+    view Signal
     shortLabel IN1
     longLabel PB2 input replicate 1
     type bigWig
@@ -126,6 +131,7 @@ priority 1
     # ---- PB2 IN Rep2 ----
     track PB2_IN_2
     parent PB2
+    view Signal
     shortLabel IN2
     longLabel PB2 input replicate 2
     type bigWig
@@ -148,6 +154,7 @@ priority 1
     # ---- PB2 IP Rep1 ----
     track PB2_IP_1
     parent PB2
+    view Signal
     shortLabel IP1
     longLabel PB2 IP replicate 1
     type bigWig
@@ -170,6 +177,7 @@ priority 1
     # ---- PB2 IP Rep2 ----
     track PB2_IP_2
     parent PB2
+    view Signal
     shortLabel IP2
     longLabel PB2 IP replicate 2
     type bigWig
