@@ -20,7 +20,7 @@ priority 1
     # ---- PB1 IN Rep1 ----
     track PB1_IN_1+
     parent PB1 on
-    bigDataUrl PB1_IN_1.scaled.plus.bw
+    bigDataUrl PB1_IN_1.scaled.minus.bw
     shortLabel PB1_IN_1+
     longLabel PB1 Input replicate 1 plus
     subGroups sample=IN replicate=1
@@ -29,7 +29,7 @@ priority 1
 
     track PB1_IN_1-
     parent PB1 on
-    bigDataUrl PB1_IN_1.scaled.minus.bw
+    bigDataUrl PB1_IN_1.scaled.plus.bw
     shortLabel PB1_IN_1-
     longLabel PB1 Input replicate 1 minus
     subGroups sample=IN replicate=1
@@ -41,7 +41,7 @@ priority 1
     # ---- PB1 IN Rep2 ----
     track PB1_IN_2+
     parent PB1 on
-    bigDataUrl PB1_IN_2.scaled.plus.bw
+    bigDataUrl PB1_IN_2.scaled.minus.bw
     shortLabel PB1_IN_2+
     longLabel PB1 Input replicate 2 plus
     subGroups sample=IN replicate=2
@@ -50,7 +50,7 @@ priority 1
 
     track PB1_IN_2-
     parent PB1 on
-    bigDataUrl PB1_IN_2.scaled.minus.bw
+    bigDataUrl PB1_IN_2.scaled.plus.bw
     shortLabel PB1_IN_2-
     longLabel PB1 Input replicate 2 minus
     subGroups sample=IN replicate=2
@@ -61,7 +61,7 @@ priority 1
     # ---- PB1 IP Rep1 ----
     track PB1_IP_1+
     parent PB1 on
-    bigDataUrl PB1_IP_1.scaled.plus.bw
+    bigDataUrl PB1_IP_1.scaled.minus.bw
     shortLabel PB1_IP_1+
     longLabel PB1 IP replicate 1 plus
     subGroups sample=IP replicate=1
@@ -70,7 +70,7 @@ priority 1
 
     track PB1_IP_1-
     parent PB1 on
-    bigDataUrl PB1_IP_1.scaled.minus.bw
+    bigDataUrl PB1_IP_1.scaled.plus.bw
     shortLabel PB1_IP_1-
     longLabel PB1 IP replicate 1 minus
     subGroups sample=IP replicate=1
@@ -81,7 +81,7 @@ priority 1
     # ---- PB1 IP Rep2 ----
     track PB1_IP_2+
     parent PB1 on
-    bigDataUrl PB1_IP_2.plus.bw
+    bigDataUrl PB1_IP_2.minus.bw
     shortLabel PB1_IP_2+
     longLabel PB1 IP replicate 2 plus
     subGroups sample=IP replicate=2
@@ -90,7 +90,7 @@ priority 1
 
     track PB1_IP_2-
     parent PB1 on
-    bigDataUrl PB1_IP_2.minus.bw
+    bigDataUrl PB1_IP_2.plus.bw
     shortLabel PB1_IP_2-
     longLabel PB1 IP replicate 2 minus
     subGroups sample=IP replicate=2
@@ -120,83 +120,79 @@ priority 1
     # ---- PB2 IN Rep1 ----
     track PB2_IN_1+
     parent PB2 on
-    bigDataUrl PB2_IN_1.plus.bw
+    bigDataUrl PB2_IN_1.scaled.minus.bw
     shortLabel PB2_IN_1+
     longLabel PB2 Input replicate 1 plus
     subGroups sample=IN replicate=1
     color 0,100,255
-    viewLimits 0:50000
-    autoScale off
+    autoScale on
 
     track PB2_IN_1-
     parent PB2 on
-    bigDataUrl PB2_IN_1.minus.bw
+    bigDataUrl PB2_IN_1.scaled.plus.bw
     shortLabel PB2_IN_1-
     longLabel PB2 Input replicate 1 minus
     subGroups sample=IN replicate=1
     color 0,100,255
-    viewLimits -50000:0
-    autoScale off
+    negateValues on
+    autoScale on
 
     # ---- PB2 IN Rep2 ----
     track PB2_IN_2+
     parent PB2 on
-    bigDataUrl PB2_IN_2.plus.bw
+    bigDataUrl PB2_IN_2.scaled.minus.bw
     shortLabel PB2_IN_2+
     longLabel PB2 Input replicate 2 plus
     subGroups sample=IN replicate=2
     color 0,100,255
-    viewLimits 0:50000
-    autoScale off
+    autoScale on
 
     track PB2_IN_2-
     parent PB2 on
-    bigDataUrl PB2_IN_2.minus.bw
+    bigDataUrl PB2_IN_2.scaled.plus.bw
     shortLabel PB2_IN_2-
     longLabel PB2 Input replicate 2 minus
     subGroups sample=IN replicate=2
     color 0,100,255
-    viewLimits -50000:0
-    autoScale off
+    negateValues on
+    autoScale on
 
     # ---- PB2 IP Rep1 ----
     track PB2_IP_1+
     parent PB2 on
-    bigDataUrl PB2_IP_1.plus.bw
+    bigDataUrl PB2_IP_1.scaled.minus.bw
     shortLabel PB2_IP_1+
     longLabel PB2 IP replicate 1 plus
     subGroups sample=IP replicate=1
     color 255,0,0
-    viewLimits 0:50000
-    autoScale off
+    autoScale on
 
     track PB2_IP_1-
     parent PB2 on
-    bigDataUrl PB2_IP_1.minus.bw
+    bigDataUrl PB2_IP_1.scaled.plus.bw
     shortLabel PB2_IP_1-
     longLabel PB2 IP replicate 1 minus
     subGroups sample=IP replicate=1
     color 255,0,0
-    viewLimits -50000:0
-    autoScale off
+    negateValues on
+    autoScale on
 
     # ---- PB2 IP Rep2 ----
     track PB2_IP_2+
     parent PB2 on
-    bigDataUrl PB2_IP_2.plus.bw
+    bigDataUrl PB2_IP_2.scaled.minus.bw
     shortLabel PB2_IP_2+
     longLabel PB2 IP replicate 2 plus
     subGroups sample=IP replicate=2
     color 255,0,0
-    viewLimits 0:50000
-    autoScale off
+    autoScale on
 
     track PB2_IP_2-
     parent PB2 on
-    bigDataUrl PB2_IP_2.minus.bw
+    bigDataUrl PB2_IP_2.scaled.plus.bw
     shortLabel PB2_IP_2-
     longLabel PB2 IP replicate 2 minus
     subGroups sample=IP replicate=2
     color 255,0,0
-    viewLimits -50000:0
-    autoScale off
+    negateValues on
+    autoScale on
