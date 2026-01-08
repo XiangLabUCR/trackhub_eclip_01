@@ -194,5 +194,5 @@ priority 1
     longLabel PB2 IP replicate 2 minus
     subGroups sample=IP replicate=2
     color 255,0,0
-    negateValues
+    negateValues on
     autoScale on
