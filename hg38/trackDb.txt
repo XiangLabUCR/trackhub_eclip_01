@@ -20,17 +20,17 @@ priority 1
     # ---- PB1 IN Rep1 ----
     track PB1_IN_1+
     parent PB1 on
-    bigDataUrl PB1_IN_1.scaled.plus.bw
+    bigDataUrl PB1_IN_1.plus.bw
     shortLabel IN_1+
-    longLabel PB1 Input replicate 1
+    longLabel PB1 Input replicate 1 plus
     subGroups sample=IN replicate=1
     color 0,100,255
 
     track PB1_IN_1-
     parent PB1 on
-    bigDataUrl PB1_IN_1.scaled.minus.bw
+    bigDataUrl PB1_IN_1.minus.bw
     shortLabel IN_1-
-    longLabel PB1 Input replicate 1
+    longLabel PB1 Input replicate 1 minus
     subGroups sample=IN replicate=1
     color 0,100,255
     negateValues on
@@ -45,13 +45,22 @@ priority 1
     color 0,100,255
 
     # ---- PB1 IP Rep1 ----
-    track PB1_IP_1
+    track PB1_IP_1+
     parent PB1 on
-    bigDataUrl PB1_IP_1.bw
-    shortLabel IP_1
-    longLabel PB1 IP replicate 1
+    bigDataUrl PB1_IP_1.plus.bw
+    shortLabel IP_1+
+    longLabel PB1 IP replicate 1 plus
     subGroups sample=IP replicate=1
     color 255,0,0
+
+    track PB1_IP_1-
+    parent PB1 on
+    bigDataUrl PB1_IP_1.minus.bw
+    shortLabel IN_1-
+    longLabel PB1 IP replicate 1 minus
+    subGroups sample=IP replicate=1
+    color 0,100,255
+    negateValues on
 
     # ---- PB1 IP Rep2 ----
     track PB1_IP_2
