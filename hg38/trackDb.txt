@@ -180,7 +180,7 @@ priority 1
     # ---- PB2 IP Rep2 ----
     track PB2_IP_2+
     parent PB2 on
-    bigDataUrl PB2_IP_2.scaled.minus.bw
+    bigDataUrl PB2_IP_2.plus.bw
     shortLabel PB2_IP_2+
     longLabel PB2 IP replicate 2 plus
     subGroups sample=IP replicate=2
@@ -189,10 +189,9 @@ priority 1
 
     track PB2_IP_2-
     parent PB2 on
-    bigDataUrl PB2_IP_2.scaled.plus.bw
+    bigDataUrl PB2_IP_2.minus.bw
     shortLabel PB2_IP_2-
     longLabel PB2 IP replicate 2 minus
     subGroups sample=IP replicate=2
     color 255,0,0
-    negateValues on
     autoScale on
